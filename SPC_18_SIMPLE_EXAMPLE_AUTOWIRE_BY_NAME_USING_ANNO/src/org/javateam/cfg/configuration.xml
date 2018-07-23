@@ -1,0 +1,45 @@
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+
+	<bean id="student" class="org.javateam.Student" >
+	<property name="classs" value="10"/>
+	<property name="studentId" value="123"/>
+	<property name="studentName" value="irfan"/>
+	
+		</bean>
+		
+		
+	
+		
+		<!-- if you are using autowire by type and if you configure any dependent bean 
+		one more time then it gives exception
+		 -->
+		<bean id="adress" class="org.javateam.Adress"  >
+		<property name="city" value="pune"></property>
+			<property name="countery" value="india1"></property>
+		</bean>
+		<bean id="adress1" class="org.javateam.Adress"  >
+		<property name="city" value="mp"></property>
+			<property name="countery" value="india"></property>
+		</bean>
+		
+		<bean id="contact" class="org.javateam.Contact">
+		<property name="mailId" value="www.autowire@gmail.com"></property>
+			<property name="phno" value="1234"></property>
+		</bean>
+		<bean id="contact1" class="org.javateam.Contact">
+		<property name="mailId" value="www.autowire@gmail.com"></property>
+			<property name="phno" value="1234"></property>
+		</bean>
+		
+<context:component-scan base-package="org.javateam"></context:component-scan>
+<context:annotation-config/>
+</beans>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy source folder &apos;src&apos; to &apos;SPC_19_SIMPLE_EXAMPLE_BEAN_POST_PROCESSOR&apos;&#x0D;&#x0A;- Original project: &apos;SPC_13_SIMPLE_EXAMPLE_BEAN_LIFE_CYCLE_USING_ANNOTATION&apos;&#x0D;&#x0A;- Destination element: &apos;SPC_19_SIMPLE_EXAMPLE_BEAN_POST_PROCESSOR&apos;&#x0D;&#x0A;- Original element: &apos;SPC_13_SIMPLE_EXAMPLE_BEAN_LIFE_CYCLE_USING_ANNOTATION/src&apos;" description="Copy source folder" destination="=SPC_19_SIMPLE_EXAMPLE_BEAN_POST_PROCESSOR" element1="/src" flags="6" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyRoots" roots="1" stamp="1511694544962" version="1.0"/>
+</session>

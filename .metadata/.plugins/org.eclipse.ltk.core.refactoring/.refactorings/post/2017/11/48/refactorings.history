@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;SPC_20_SIMPLE_EXAMPLE_FACTORY_BEAN_POST_PROCESSOR/src&apos;&#x0D;&#x0A;- Original project: &apos;post&apos;&#x0D;&#x0A;- Destination element: &apos;SPC_20_SIMPLE_EXAMPLE_FACTORY_BEAN_POST_PROCESSOR/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     post/src/org.javateam&#x0D;&#x0A;     post/src/org.javateam.test&#x0D;&#x0A;     post/src/org.javateam.cfg" description="Copy packages" destination="=SPC_20_SIMPLE_EXAMPLE_FACTORY_BEAN_POST_PROCESSOR/src" element1="/src&lt;org.javateam" element2="/src&lt;org.javateam.test" element3="/src&lt;org.javateam.cfg" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1511708045473" version="1.0"/>
+</session>

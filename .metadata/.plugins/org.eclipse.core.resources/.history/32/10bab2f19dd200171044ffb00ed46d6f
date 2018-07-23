@@ -1,0 +1,34 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
+import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:4:43:51 pm
+ *DATE:26-Nov-2017
+ *TAGS:
+ */
+public class FactoryBeanPostProcessor implements BeanFactoryPostProcessor{
+
+	/* (non-Javadoc)
+	 * @see org.springframework.beans.factory.config.BeanFactoryPostProcessor#postProcessBeanFactory(org.springframework.beans.factory.config.ConfigurableListableBeanFactory)
+	 */
+	@Override
+	public void postProcessBeanFactory(ConfigurableListableBeanFactory arg0) throws BeansException {
+		// TODO Auto-generated method stub
+		System.out.println("exicuted");
+	}
+
+	/* (non-Javadoc)
+	 * @see org.springframework.beans.factory.config.BeanPostProcessor#postProcessAfterInitialization(java.lang.Object, java.lang.String)
+	 */
+	
+
+}

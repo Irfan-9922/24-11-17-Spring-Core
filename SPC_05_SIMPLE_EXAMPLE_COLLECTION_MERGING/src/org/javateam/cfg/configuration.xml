@@ -1,0 +1,44 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="sample" class="org.javateam.Student">
+
+		<property name="name" value="irfan" />
+		<property name="id" value="12" />
+		<property name="adress" ref="adress1" />
+	</bean>
+
+	<bean id="adress1" class="org.javateam.Adress">
+		<property name="contactdetails">
+
+			<bean class="org.javateam.ContactDetails">
+				
+						<property name="emailId" value="nisar12@gmail.com" />
+						<property name="landLineNo" value="0902832" />
+						<property name="moNo" >
+						<set>
+						<value>0902832</value>
+						<value>0902832</value>
+						<value>888836</value>
+						</set>
+						</property>
+					
+			</bean>
+		</property>
+		<property name="zipcode" value="1231" />
+		<property name="countery" value="india" />
+		<property name="city">
+			<list>
+				<value>pune</value>
+				<value>latur</value>
+				<value>nashik</value>
+
+			</list>
+		</property>
+
+	</bean>
+
+</beans>

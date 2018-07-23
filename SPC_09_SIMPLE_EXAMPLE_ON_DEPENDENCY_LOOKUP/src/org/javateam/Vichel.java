@@ -1,0 +1,42 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.FileSystemResource;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:10:26:33 am
+ *DATE:22-Nov-2017
+ *TAGS:
+ */
+public class Vichel {
+	
+	private int engg;
+
+	public void setEngg(int engg) {
+		this.engg = engg;
+	}
+	
+	public void move(){
+		FileSystemResource res=new FileSystemResource("src/org/javateam/cfg/configuration.xml");
+		BeanFactory fac=new XmlBeanFactory(res);
+		Engine e=(Engine) fac.getBean("adress");
+		
+		e.engstart();
+		System.out.println("bike is running");
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Vichel [engg=" + engg + "]";
+	}
+	
+}

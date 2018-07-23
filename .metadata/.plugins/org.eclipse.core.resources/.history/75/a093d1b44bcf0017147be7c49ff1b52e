@@ -1,0 +1,24 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="sample" class="org.javateam.Student">
+
+		<constructor-arg value="nisar"></constructor-arg>
+		<constructor-arg value="12"></constructor-arg>
+		<constructor-arg  ref="add"></constructor-arg>
+		<property name="adress" ref="adress1"></property>
+
+	</bean>
+
+	<bean id="adress1" class="org.javateam.Adress">
+
+		<constructor-arg value="1231"></constructor-arg>
+		<constructor-arg value="india"></constructor-arg>
+		<!-- <constructor-arg value="latur"></constructor-arg> -->
+		<property name="city" value="pune"/>
+		<property name="countery" value="ind"></property>
+	</bean>
+</beans>
